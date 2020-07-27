@@ -1,27 +1,25 @@
 package by.jonline.line_program;
 
 public class Task6 {
-    /* 
-     * 6. Для данной области составить линейную программу, которая печатает true,
-     * если точка с координатами (х, у) принадлежит закрашенной области, и 
-     * false — в противном случае: 
+    /*
+     * Р”Р»СЏ РґР°РЅРЅРѕР№ РѕР±Р»Р°СЃС‚Рё СЃРѕСЃС‚Р°РІРёС‚СЊ Р»РёРЅРµР№РЅСѓСЋ РїСЂРѕРіСЂР°РјРјСѓ, РєРѕС‚РѕСЂР°СЏ РїРµС‡Р°С‚Р°РµС‚ true, РµСЃР»Рё
+     * С‚РѕС‡РєР° СЃ РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё (С…, Сѓ) РїСЂРёРЅР°РґР»РµР¶РёС‚ Р·Р°РєСЂР°С€РµРЅРЅРѕР№ РѕР±Р»Р°СЃС‚Рё, Рё false вЂ” РІ
+     * РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ:
      */
     public static void main(String[] args) {
-        
+
         int x = 5;
         int y = 0;
-        
-        boolean result = ((Task6.checkInRange(x, -4, 4) && 
-                           Task6.checkInRange(y, -3, 0)) || 
-                          (Task6.checkInRange(x, -2, 2) && 
-                           Task6.checkInRange(y, 0, 4)));
-                           
+
+        boolean result = ((Task6.checkInRange(x, -4, 4) && Task6.checkInRange(y, -3, 0)) || 
+                          (Task6.checkInRange(x, -2, 2) && Task6.checkInRange(y, 0, 4)));
+
         String stringResutl = "does not belong";
         if (result) {
-            stringResutl ="belongs";
+            stringResutl = "belongs";
         }
-        
-        System.out.println("Line program. Task 6. Result: " + result + "." +
+
+        System.out.println("Line program. Task 6. Result: " + result + "." + 
                            "\nXY point " + stringResutl + " to area.");
     }
 

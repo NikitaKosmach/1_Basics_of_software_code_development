@@ -1,21 +1,20 @@
 package by.jonline.branche;
 
 public class Task1 {
-    /* 
-     * 1. Äàíû äâà óãëà òðåóãîëüíèêà (â ãðàäóñàõ). Îïðåäåëèòü, ñóùåñòâóåò ëè 
-     * òàêîé òðåóãîëüíèê, è åñëè äà, òî áóäåò ëè îí ïðÿìîóãîëüíûì.
+    /*
+     * 1. Ð”Ð°Ð½Ñ‹ Ð´Ð²Ð° ÑƒÐ³Ð»Ð° Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° (Ð² Ð³Ñ€Ð°Ð´ÑƒÑÐ°Ñ…). ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ñ‚ÑŒ, ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚ Ð»Ð¸ Ñ‚Ð°ÐºÐ¾Ð¹
+     * Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº, Ð¸ ÐµÑÐ»Ð¸ Ð´Ð°, Ñ‚Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ð»Ð¸ Ð¾Ð½ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ñ‹Ð¼
      */
     public static void main(String[] args) {
         // Degree of triangle angle
-        float angle1 = 0f;
+        float angle1 = 45f;
         float angle2 = 45f;
         float triangleFullDegree = 180f;
-        
+
         float angle3 = triangleFullDegree - (angle1 + angle2);
         boolean triangleExist = angle1 > 0 && angle2 > 0 && angle3 > 0;
-        boolean rightTriangle = triangleExist && 
-                                (angle1 == 90 || angle2 == 90 || angle3 == 90); 
-        
+        boolean rightTriangle = triangleExist && (angle1 == 90 || angle2 == 90 || angle3 == 90);
+
         System.out.println("Branche. Task 1. Result:");
         System.out.println("Does triangle exist? " + triangleExist);
         System.out.println("Is it right triangle? " + rightTriangle);

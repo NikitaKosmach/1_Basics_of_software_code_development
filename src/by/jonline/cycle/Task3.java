@@ -4,10 +4,9 @@ import java.lang.Math;
 
 public class Task3 {
     /* 
-     * 3. Найти сумму квадратов первых ста чисел.
+     * 3. РќР°Р№С‚Рё СЃСѓРјРјСѓ РєРІР°РґСЂР°С‚РѕРІ РїРµСЂРІС‹С… СЃС‚Р° С‡РёСЃРµР».
      */
     public static void main(String[] args) {
-        
         int result = 0;
         for (int i = 1; i <= 100; i++) {
             result += Math.pow(i, 2);

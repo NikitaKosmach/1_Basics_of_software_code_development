@@ -1,9 +1,9 @@
 package by.jonline.branche;
 
 public class Task4 {
-    /* 
-     * 4. Çàäàíû ðàçìåðû À, Â ïðÿìîóãîëüíîãî îòâåðñòèÿ è ðàçìåðû õ, ó, z êèðïè÷à.
-     * Îïðåäåëèòü, ïðîéäåò ëè êèðïè÷ ÷åðåç îòâåðñòèå.
+    /*
+     * 4. Ð—Ð°Ð´Ð°Ð½Ñ‹ Ñ€Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð, Ð’ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¾Ñ‚Ð²ÐµÑ€ÑÑ‚Ð¸Ñ Ð¸ Ñ€Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ñ…, Ñƒ, z ÐºÐ¸Ñ€Ð¿Ð¸Ñ‡Ð°.
+     * ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ñ‚ÑŒ, Ð¿Ñ€Ð¾Ð¹Ð´ÐµÑ‚ Ð»Ð¸ ÐºÐ¸Ñ€Ð¿Ð¸Ñ‡ Ñ‡ÐµÑ€ÐµÐ· Ð¾Ñ‚Ð²ÐµÑ€ÑÑ‚Ð¸Ðµ.
      */
     public static void main(String[] args) {
         double A = 2;
@@ -14,7 +14,7 @@ public class Task4 {
 
         boolean result;
         if (A >= x) {
-            result = (B >= y) || (B >= z); 
+            result = (B >= y) || (B >= z);
         } else if (A >= y) {
             result = (B >= x) || (B >= z);
         } else if (A >= z) {
@@ -22,9 +22,9 @@ public class Task4 {
         } else {
             result = false;
         }
-            
+
         System.out.println("Branche. Task 4. Result: " + result);
         System.out.println("Does a brick fit? " + result);
     }
-    
+
 }

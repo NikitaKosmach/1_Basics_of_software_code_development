@@ -1,22 +1,22 @@
 package by.jonline.line_program;
 
-import java.lang.Math; 
+import java.lang.Math;
 
 public class Task4 {
-    /* 
-     * 4. Дано действительное число R вида nnn.ddd (три цифровых разряда в 
-     * дробной и целой частях). Поменять местами дробную и целую части числа и 
-     * вывести полученное значение числа.
+    /*
+     * 4. Р”Р°РЅРѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ R РІРёРґР° nnn.ddd (С‚СЂРё С†РёС„СЂРѕРІС‹С… СЂР°Р·СЂСЏРґР° РІ РґСЂРѕР±РЅРѕР№ Рё
+     * С†РµР»РѕР№ С‡Р°СЃС‚СЏС…). РџРѕРјРµРЅСЏС‚СЊ РјРµСЃС‚Р°РјРё РґСЂРѕР±РЅСѓСЋ Рё С†РµР»СѓСЋ С‡Р°СЃС‚Рё С‡РёСЃР»Р° Рё РІС‹РІРµСЃС‚Рё
+     * РїРѕР»СѓС‡РµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ С‡РёСЃР»Р°
      */
     public static void main(String[] args) {
         double x = 123.321; // real number R of the form nnn.ddd
-        
-        double intPart = Math.floor(x); 
+
+        double intPart = Math.floor(x);
         double fractionalPart = Math.round((x - intPart) * 1000.0);
         intPart = intPart * 0.001;
-        
+
         double result = fractionalPart + intPart;
-        
+
         System.out.print("Line program. Task 4. Result: " + result);
     }
 

@@ -2,13 +2,12 @@ package by.jonline.cycle;
 
 public class Task2 {
     /* 
-     * 2. Âû÷èñëèòü çíà÷åíèÿ ôóíêöèè íà îòðåçêå [à,b] c øàãîì h:
+     * 2. Ð’Ñ‹Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÑŒ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð½Ð° Ð¾Ñ‚Ñ€ÐµÐ·ÐºÐµ [Ð°,b] c ÑˆÐ°Ð³Ð¾Ð¼ h:
      *     [x, x > 2
      * y = {
      *     {-x, x <= 2
      */
     public static void main(String[] args) {
-        
         double a = 0;
         double b = 5;
         double h = 0.1;

@@ -1,15 +1,14 @@
 package by.jonline.cycle;
 
-import java.io.*;
+//import java.io.*;
+import java.util.Scanner;
 
 public class Task1 {
     /* 
-     * 1. Íàïèøèòå ïðîãðàììó, ãäå ïîëüçîâàòåëü ââîäèò ëþáîå öåëîå ïîëîæèòåëüíîå 
-     * ÷èñëî. À ïðîãðàììà ñóììèðóåò âñå ÷èñëà îò 1 äî ââåäåííîãî ïîëüçîâàòåëåì 
-     * ÷èñëà.
+     * 1. ÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñƒ, Ð³Ð´Ðµ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ð²Ð²Ð¾Ð´Ð¸Ñ‚ Ð»ÑŽÐ±Ð¾Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ 
+     * Ñ‡Ð¸ÑÐ»Ð¾. Ð Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° ÑÑƒÐ¼Ð¼Ð¸Ñ€ÑƒÐµÑ‚ Ð²ÑÐµ Ñ‡Ð¸ÑÐ»Ð° Ð¾Ñ‚ 1 Ð´Ð¾ Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¼ Ñ‡Ð¸ÑÐ»Ð°.
      */
     public static void main(String[] args) {
-        
         int maxNumber = Task1.getIntFromConsole("Write max length of sequence: ");
 
         int result = 0;
@@ -21,35 +20,26 @@ public class Task1 {
     }
     
     public static int getIntFromConsole(String outputPhrase) {
-        
-        /* int inputValue = 0;
-        boolean validInput = false;
-        while (!validInput) {
-            try {
-                System.out.println(outputPhrase);
-                Scanner myScanner = new Scanner(System.in);
-                inputValue = myScanner.nextInt();
-                myScanner.close();
-                validInput = true;
-            } catch (Exception  e) {
-                System.out.println("Invalid input data. Use only integer value.");
-            }
-        }
-        return inputValue;*/
-        
+        @SuppressWarnings("resource")
+        Scanner sc = new Scanner(System.in);
         int inputValue = 0;
-        boolean validInput = false;
-        while (!validInput) {
-            try {
-                System.out.println(outputPhrase);
-                BufferedReader is = new BufferedReader(new InputStreamReader(System.in));
-                String inputLine  =  is.readLine();
-                inputValue = Integer.valueOf(inputLine);
-                validInput = true;
-            } catch (Exception  e) {
-                System.out.println("Invalid input data. Use only integer value.");
+        boolean validResult = false;
+        
+        do {
+            System.out.println(outputPhrase);
+            if (sc.hasNextInt()) {
+                inputValue = sc.nextInt();
+                if (inputValue > 0) {
+                    validResult = true;
+                } else {
+                    System.out.println("Invalid input data. Use only integer value more than 0.");
+                }
+            } else {
+                System.out.println("Invalid input data. Use only integer value more than 0.");
+                sc.next();
             }
-        }
+        } while (!validResult);
+        
         return inputValue;
     }
     

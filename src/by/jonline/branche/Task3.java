@@ -1,9 +1,9 @@
 package by.jonline.branche;
 
 public class Task3 {
-    /* 
-     * 3. Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). 
-     * Определить, будут ли они расположены на одной прямой
+    /*
+     * 3. Р”Р°РЅС‹ С‚СЂРё С‚РѕС‡РєРё Рђ(С…1,Сѓ1), Р’(С…2,Сѓ2) Рё РЎ(С…3,Сѓ3). РћРїСЂРµРґРµР»РёС‚СЊ, Р±СѓРґСѓС‚ Р»Рё РѕРЅРё
+     * СЂР°СЃРїРѕР»РѕР¶РµРЅС‹ РЅР° РѕРґРЅРѕР№ РїСЂСЏРјРѕР№.
      */
     public static void main(String[] args) {
         double x1 = 1;
@@ -17,5 +17,5 @@ public class Task3 {
         System.out.println("Branche. Task 3. Result: " + result);
         System.out.println("Do three points lie on one straight line? " + result);
     }
-    
+
 }

@@ -4,10 +4,10 @@ import java.lang.Math;
 
 public class Task5 {
     /* 
-     * 5. Вычислить значение функции:
-     *        [x^2 - 3x + 9, если x <= 3;
+     * 5. Р’С‹С‡РёСЃР»РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё:
+     *        [x^2 - 3x + 9, РµСЃР»Рё x <= 3;
      * F(x) = {
-     *        [1/(x^3 + 6),  если x > 3;
+     *        [1/(x^3 + 6),  РµСЃР»Рё x > 3;
      */
     public static void main(String[] args) {
         //double x = Double.NaN;
