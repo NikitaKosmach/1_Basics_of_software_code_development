@@ -6,8 +6,11 @@ public class Task7 {
      * все делители, кроме единицы и самого числа. m и n вводятся с клавиатуры.
      */
     public static void main(String[] args) { 
-        int m = Task1.getIntFromConsole("Write minimum value m:");
-        int n = Task1.getIntFromConsole("Write maximum value n:");
+        int m;
+        int n;
+        
+        m = Task1.getIntFromConsole("Write minimum value m:");
+        n = Task1.getIntFromConsole("Write maximum value n:");
         
         System.out.print("Cycle. Task 7. Result: ");
         for (int i = m; i <= n; i++) {

@@ -8,7 +8,13 @@ public class Task4 {
     public static void main(String[] args) {
         double result = 1;
         for (int i = 1; i <= 200; i++) {
-            result *= Math.pow(i, 2);
+            if (result == Double.POSITIVE_INFINITY) {
+                System.out.println("Limit of double type was exiting result == " + result);
+                break;
+            } else {
+                result *= Math.pow(i, 2);
+            }
+            
         }
         System.out.println("Cycle. Task 4. Result: " + result);
     }

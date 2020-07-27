@@ -11,8 +11,8 @@ public class Task2 {
         double a = 0;
         double b = 5;
         double h = 0.1;
-        
         double x = a;
+        
         System.out.println("Cycle. Task 2. Result: ");
         System.out.println("Y           X");
         double y;

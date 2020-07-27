@@ -9,6 +9,7 @@ public class Task1 {
      * число. А программа суммирует все числа от 1 до введенного пользователем числа.
      */
     public static void main(String[] args) {
+    
         int maxNumber = Task1.getIntFromConsole("Write max length of sequence: ");
 
         int result = 0;

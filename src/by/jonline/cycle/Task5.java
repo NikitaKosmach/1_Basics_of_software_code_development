@@ -12,8 +12,8 @@ public class Task5 {
     public static void main(String[] args) {
         double eThreshold = 2E-7;
         int maxN = 100;
-        
         double result = 0;
+        
         System.out.print("Sequence: ");
         for (int n = 1; n <= maxN; n++) {
             double an = (1/Math.pow(2.0, n)) + (1/Math.pow(3.0, n));

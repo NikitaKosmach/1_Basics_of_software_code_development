@@ -12,8 +12,8 @@ public class Task5 {
     public static void main(String[] args) {
         //double x = Double.NaN;
         double x = 4; 
-        
         double result;
+        
         if (x <= 3.0) {
             result = Math.pow(x, 2.0) - (3.0 * x) + 9.0;
         } else {
